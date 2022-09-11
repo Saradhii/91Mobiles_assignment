@@ -1,0 +1,3 @@
+
+export const GET_USERNAME= "GET_USERNAME";
+export const DELETE_USERNAME = "DELETE_USERNAME";

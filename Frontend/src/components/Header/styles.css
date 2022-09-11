@@ -1,0 +1,483 @@
+.header{
+    width:100%;
+    height: 100px;
+    background-color: #04AA6D;
+    color: azure;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.header-sm{
+  display: none;
+}
+a{
+    color: azure;
+    text-decoration: none;
+}
+.header h1{
+   padding:10px;
+}
+.header h1:hover{
+    color:  black;
+    cursor: pointer;
+}
+.header img{
+  width:50px;
+  height:50px;
+}
+.header span{
+  /* border:1px solid black; */
+  text-align: center;
+  display: flex;
+  padding-top: 25px;
+  font-size: 20px;
+}
+span p{
+  margin-top: 10px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .signuppage{
+    width:50%;
+    margin:auto;
+  }
+  .homeprofile{
+    width:88%;
+    margin:auto;
+    border: 1px solid #45a049;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .homeprofile>div{
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+.profdetails{
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: auto;
+  gap:10px;
+  grid-template-rows: 130px;
+}
+.profdetails img{
+  margin-top: 10px;
+  width:90%;
+  height:70%;
+}
+.patient{
+  display: grid;
+  grid-template-columns: repeat(1,98%);
+  grid-template-rows: 100px 400px;
+  gap:10px;
+  padding:10px;
+  height: 1500px;
+}
+.patientheader{
+  display: grid;
+  grid-template-columns: 17% 88%;
+  grid-template-rows: 70px;
+  gap:10px;
+  padding: 10px;
+}
+.patientheader > div{
+  padding:5px;
+}
+.patientdata{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+.filters{
+  display: flex;
+  /* border: 1px solid black; */
+}
+.filters span{
+  margin-top: 25px;
+  font-size: 18px;
+}
+.filters input{
+  width:150px;
+  margin-top: 19px;
+}
+.patientdata > div{
+  border:1px solid black;
+  display: grid;
+  grid-template-columns: 30% 15% 15% 25% 15%;
+  padding:10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.edit{
+  background-color: #04AA6D;
+  border: none;
+  width:70px;
+  height:50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.spinner-3 {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: s3 1s infinite linear;
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
+.delete{
+  background-color:red;
+  border: none;
+  width:70px;
+  height:40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-popup img{
+    width:50px;
+    height:50px;
+}
+h3>img{
+  height:50px;
+  width:50px;
+}
+h3{
+  display: flex;
+}
+h3 p{
+  margin-top: 10px;
+}
+
+.updatemedicine{
+  width:60%;
+  margin:auto;
+  border: 1px solid black;
+  padding:10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 50px;
+  display: flex;
+  gap: 100px;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #04AA6D;
+  border-radius: 5px;
+  margin-top: 18px;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-left: 5px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position:fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container img {
+  height:50px;
+  width:50px;
+}
+.footer{
+  border:1px solid black;
+  padding:10px;
+  width:50%;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.liink{
+  border:2px solid black;
+  padding:10px;
+  margin-left: 2px;
+  cursor: pointer;
+  color: red;
+}
+a p{
+  color:black;
+}
+a p:hover{
+  color:#04AA6D
+}
+.pageink{
+  display:flex;
+  /* border:2px solid black; */
+  padding:15px;
+  margin-left: 65px;
+}
+.liink:hover{
+  background-color: lightblue;
+}
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+select{
+  cursor: pointer;
+  font-size: 15px;
+}
+option{
+  font-size: 15px;
+}
+.medicinedetails{
+  width:500px;
+  height:500px;
+  /* border:1px solid black; */
+  border-radius: 10px;
+}
+.medicine{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.redbutton{
+  padding:5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height:30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.profileclass{
+  width:50%;
+  margin:auto;
+  height:400px;
+  /* border:1px solid black; */
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: salmon;
+  color:white;
+  display: flex;
+  padding:10px;
+  justify-content: space-between;
+}
+.profileclass>div{
+  /* border:1px solid black; */
+  width:48%;
+  padding:10px;
+}
+.profimage{
+  padding:10px;
+  text-align: center;
+}
+.profimage img{
+  border-radius: 150px;
+  margin-top: 10%;
+}
+.profimage h3{
+  margin-left: 45%;
+}
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.dochome{
+  width:90%;
+  margin: auto;
+  padding:10px;
+  /* border:1px solid black; */
+  margin-top: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.b1{
+   width:120px;
+   height:50px;
+   border: none;
+   background-color: #04AA6D;
+   color: white;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.docbody{
+  width:90%;
+  margin: auto;
+  border:1px solid #04AA6D;
+  background-color: salmon;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.fileupload{
+  width:30%;
+  height:200px;
+  margin:auto;
+  text-align: center;
+  padding:10px;
+  color:white;
+}
+.doty{
+  padding:10px;
+  border:1px solid black;
+  border-radius: 5px;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.pdfdoc{
+  width:90%;
+  margin:auto;
+  height:100vh;
+}
+.singledoc{
+  width:1300px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 450px) {
+  .header{
+    display: none;
+  }
+  .header-sm{
+    width:100%;
+    background-color: #04AA6D;
+    display: flex;
+    height:100px;
+    padding:10px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .header-sm img{
+    width:50px;
+    height:50px;
+    margin-top: 0%;
+  }
+  .header-sm h1{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .profileclass{
+    width:90%;
+    margin:auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: salmon;
+    color:white;
+    display: grid;
+    grid-template-columns: 730px;
+    grid-template-rows: repeat(2,250px);
+  }
+  .profileclass>div{
+    /* border:1px solid black; */
+    width:48%;
+    padding:10px;
+    text-align: center;
+  }
+  .profimage{
+    text-align: center;
+  }
+  .profimage img{
+    width:50%;
+    height:50%;
+  }
+  .profimage h3{
+    margin-left: 45%;
+  }
+  .singledoc{
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
